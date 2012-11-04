@@ -1,0 +1,65 @@
+[11/04/2012]
+     Released.: Version 3.0
+     Fixed....: Issue in Port List Sorting
+     Fixed....: Issue in ICMP Host List Generation
+     Fixed....: Removed Error Message in Gathering Files
+     Modified.: Major Codebase Change (155 vs 421 LoC)
+     Modified.: Combined Granular Switches Into Single Switch (-p)
+     Modified.: Cosmetics
+
+[10/25/2012]
+     Released.: Version 2.3
+     Added....: Extended Hosts Lists (ICMP & Open Ports)
+     Modified.: Parsing Strings
+     Modified.: Cosmetics
+     Fixed....: Sorting of IP Addresses
+     Fixed....: Issue Where Filtered Ports Were Added to Port Lists
+
+[07/13/2012]
+     Released.: Version 2.2.1
+     Modified.: Now Using Semantic Versioning
+     Modified.: Changed Mode to 755
+     Modified.: Updated README
+
+[07/10/2012]
+     Modified.: Moved Source To Git Repository
+
+[11/04/2011]
+     Released.: Version 2.2
+     Added....: Officially Released Under The GPL License
+     Added....: -apl Option (Create TCP & UDP Ports Lists)
+     Fixed....: Code Structure
+     Modified.: Optimized Functions
+     Modified.: Switch Names
+     Modified.: Cosmetics
+     Modified.: Comments and Help Menu
+
+[11/12/2010]
+     Released.: Version 2.1
+     Added....: -g Option (Gather .gnmap Files)
+     Added....: Title Function
+     Added....: Check For Gnmap Files Function
+     Added....: Remove Empty Files Function
+     Modified.: Selection Functions
+     Modified.: Cleaned Up Code
+     Modified.: Help Menu Structure
+
+[08/27/2010]
+     Released.: Version 2.0
+     Added....: -tpl Option (Create TCP Ports List)
+     Added....: -upl Option (Create UDP Ports List)
+     Added....: -tsm Option (Create TCP Matrix List)
+     Added....: -usm Option (Create UDP Matrix List)
+     Added....: -asm Option (Create TCP & UDP Matrix List)
+     Added....: -all Option (Do It All)
+     Modified.: Code Structure
+     Modified.: Cosmetics
+
+[07/07/2010]
+     Released.: Version 1.8
+     Added....: -hl Option (Create Alive Host List)
+     Fixed....: fcheck Variable Wasn't Finding gnmap Files Correctly
+
+[07/05/2010]
+     Released.: Version 1.5
+     First Non-Beta Release
