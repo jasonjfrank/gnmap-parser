@@ -20,7 +20,7 @@ Supported Switches:
 * -g | --gather = Gather .gnmap Files
 * -p | --parse  = Parse .gnmap Files
 
-**Limitations**
+Limitations:
 
 1: Gnmap-Parser will only parse *.gnmap files that are in the same directory that it resides. For this reason, the gather switch (-g) was 
 implemented to copy *.gnmap from their discovered locations into the scripts working directory. Any path will work as Gnmap-Parser will traverse all
