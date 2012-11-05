@@ -15,16 +15,16 @@ Gnmap-Parser takes multiple Nmap scans exported in greppable (.gnmap) format and
 
 Usage
 -----
-Supported Switches:
+**Supported Switches:**
 
 * -g | --gather = Gather .gnmap Files
 * -p | --parse  = Parse .gnmap Files
 
-Limitations:
+**Limitations:**
 
-1: Gnmap-Parser will only parse *.gnmap files that are in the same directory that it resides. For this reason, the gather switch (-g) was 
+* Gnmap-Parser will only parse *.gnmap files that are in the same directory that it resides. For this reason, the gather switch (-g) was 
 implemented to copy *.gnmap from their discovered locations into the scripts working directory. Any path will work as Gnmap-Parser will traverse all
 subdirectories. For instance, providing a parent directory of "/" will traverse the entire root filesystem looking for *.gnmap files.
 
-2: Gnmap-Parser currently only parses files that end with the .gnmap extension. If using the -oA switch of Nmap, these files will already
+* Gnmap-Parser currently only parses files that end with the .gnmap extension. If using the -oA switch of Nmap, these files will already
 be named with the correct extension. If specifying the -oG switch, be sure to append .gnmap to the filename.
