@@ -2,7 +2,7 @@
 #####################################################################################
 # Gnmap-Parser.sh
 #####################################################################################
-# Description: Script to parse large amounts of Nmap (.gnmap) exported scan files 
+# Description: Script to parse large amounts of Nmap (.gnmap) exported scan files
 #              into multiple plain-text formats for easy analysis.
 #####################################################################################
 
@@ -21,9 +21,9 @@ func_title(){
 
   # Print Title
   echo '============================================================================'
-  echo ' Gnmap-Parser | [Version]: 3.0.0 | [Updated]: 11.04.2012'
+  echo ' Gnmap-Parser.sh | [Version]: 3.0.1 | [Updated]: 03.05.2013'
   echo '============================================================================'
-  echo ' [By]: Mike Wright (@TheMightyShiv) | https://github.com/TheMightyShiv'
+  echo ' [By]: Michael Wright | [GitHub]: https://github.com/themightyshiv'
   echo '============================================================================'
   echo
 }
@@ -33,12 +33,11 @@ func_gather(){
   echo '[?] Enter The Parent Directory Where Your Gnmap Files Are Located.'
   echo
   read -p '[>] Parent Directory: ' floc
-  clear
   func_title
   echo '[*] Gathering .gnmap Files'
   find ${floc} -name *.gnmap -exec cp {} . \; >>/dev/null 2>&1
   func_title
-  echo '[*] Gathering Complete.'
+  echo "[*] Gathered `ls *.gnmap|wc -l` .gnmap Files"
   echo
   exit 0
 }
@@ -146,10 +145,9 @@ case ${1} in
     func_parse
     ;;
   *)
-    echo ' Usage...: ./Gnmap-Parser.sh [OPTION]'
-    echo
-    echo ' Options.:'
-    echo '           -g|--gather = Gather .gnmap Files'
-    echo '           -p|--parse  = Parse .gnmap Files'
+    echo ' [Usage]...: ./Gnmap-Parser.sh [OPTION]'
+    echo ' [Options].:'
+    echo '             -g | --gather = Gather .gnmap Files'
+    echo '             -p | --parse  = Parse .gnmap Files'
     echo
 esac
